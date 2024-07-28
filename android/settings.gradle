@@ -1,4 +1,4 @@
-rootProject.name = 'market-watcher'
+rootProject.name = 'Market Watcher'
 
 dependencyResolutionManagement {
   versionCatalogs {
