@@ -1,21 +1,20 @@
-import { Link, Stack } from 'expo-router';
-import { StyleSheet } from 'react-native';
+import { Link, Stack } from 'expo-router'
+import { StyleSheet } from 'react-native'
 
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { H1, H2, H3, Paragraph, Text, View } from 'tamagui'
 
 export default function NotFoundScreen() {
   return (
     <>
       <Stack.Screen options={{ title: 'Oops!' }} />
-      <ThemedView style={styles.container}>
-        <ThemedText type="title">This screen doesn't exist.</ThemedText>
+      <View style={styles.container}>
+        <H2>This screen doesn't exist.</H2>
         <Link href="/" style={styles.link}>
-          <ThemedText type="link">Go to home screen!</ThemedText>
+          <Paragraph col="$blue10">Go to home screen!</Paragraph>
         </Link>
-      </ThemedView>
+      </View>
     </>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -29,4 +28,4 @@ const styles = StyleSheet.create({
     marginTop: 15,
     paddingVertical: 15,
   },
-});
+})
