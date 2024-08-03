@@ -9,7 +9,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 - Whenever possible prefer Tamagui Lucide Icons instead of expo vector icons
 - ~~Its a monorepo~~ (Its not) 
   - Follow [this](https://tamagui.dev/docs/guides/metro#native) to add metro monorepo support (Didnt work for me though)
-- The Optimizing compiler is only enabled for expo. There is no web support for optimizing compiler. Follow [Web Support section here](https://tamagui.dev/docs/guides/metro#native) to add it
+- The Optimizing compiler is enabled for metro bundler web and expo. Follow [Web Support section here](https://tamagui.dev/docs/guides/metro#native) to know more on web support
+  - By adding the optimizing compiler to your project, you might have to delete the `node_modules` and install them again. Use `expo start -c` to test the run. If its not successful, try again but delete `yarn.lock` (Dangerous move -- save your yarn.lock before doing this stunt) too this time 
 
 ## Get started
 
