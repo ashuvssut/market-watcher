@@ -2,12 +2,15 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-- ~~Its a monorepo~~ (Its not)
 - Use expo-router with TS
 - Uses bare workflow to enable expo dev build
 - Uses Tamagui for Theme
 - Uses biome for code formatting
 - Whenever possible prefer Tamagui Lucide Icons instead of expo vector icons
+- ~~Its a monorepo~~ (Its not) 
+  - Follow [this](https://tamagui.dev/docs/guides/metro#native) to add metro monorepo support (Didnt work for me though)
+- The Optimizing compiler is only enabled for expo. There is no web support for optimizing compiler. Follow [Web Support section here](https://tamagui.dev/docs/guides/metro#native) to add it
+
 ## Get started
 
 1. Install dependencies
