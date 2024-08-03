@@ -22,3 +22,4 @@ expo-env.d.ts
 .dump
 .yarn
 .tamagui/
+tamagui-web.css
